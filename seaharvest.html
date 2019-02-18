@@ -1,0 +1,1161 @@
+<html class="no-js chrome" lang="en" style="">
+
+<head>
+	<title>Sea Harvest | Fresh Seafood Market | Canberra</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+
+<style>
+       * {
+            box-sizing: border-box;
+          }
+		  
+        html,
+        body {
+            text-align: center;
+            font-family: 'Space Mono', monospace;
+            font-weight: 400;
+            margin: 0;
+            background-size: 300px 300px;
+            background-repeat: repeat;
+            line-height: 1.42857143;
+            overflow-x: hidden;
+            max-width: 100vw;
+            font-size: 1rem;
+        }
+
+        .under-wrapper {
+            background: #26498d;
+        }
+
+        @keyframes rotateFromCenter {
+            from {
+                transform: rotate(0deg) scale(0.1);
+            }
+
+            to {
+                transform: rotate(-1080deg) scale(1);
+            }
+        }
+
+        #site-wrapper {
+            padding: 2vw;
+            width: 100%;
+            max-width: 1750px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            background: #fffcf9 url("images/ricepaper2.jpeg");
+            background-size: 300px 300px;
+            background-repeat: repeat;
+            transform-origin: 50% 313px 0px;
+            animation: rotateFromCenter 1s linear;
+        }
+
+
+        a {
+            color: inherit;
+            transition: color .2s;
+            user-drag: none;
+            -webkit-user-drag: none;
+            background-color: transparent;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-style: none;
+
+        }
+
+        .image {
+            filter: brightness(90%) grayscale(100%) contrast(130%);
+            transition: filter .9s;
+            -webkit-user-drag: none;
+            user-drag: none;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: .67em 0;
+            font-weight: bold;
+        }
+
+        .title {
+            text-transform: uppercase;
+            font-family: Portrait, serif;
+            line-height: .891;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 4rem;
+            line-height: .85714286;
+        }
+
+        .title-description {
+            font-size: 1rem;
+            line-height: 1.71428571;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-family: 'Space Mono', monospace;
+            margin-top: 6px;
+            margin-bottom: 0;
+        }
+
+        .title-lg {
+            font-size: 6.571428571428571rem;
+            line-height: 1;
+        }
+
+        .title-med {
+            font-size: 4.414285714285714rem;
+            line-height: 1;
+        }
+
+        .title-sm {
+            font-size: 3rem;
+        }
+
+
+        .header-banner {
+            display: grid;
+            grid-template-columns: 2fr 8fr 2fr;
+            grid-template-rows: repeat(auto-fill, auto);
+            grid-template-areas:
+                "side1 content side2";
+            box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+
+        }
+
+        .header-logo {
+            display: grid;
+            grid-area: side1;
+            padding: 2.28571429rem;
+
+        }
+
+
+        .header-logo .logo {
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            width: 120px;
+        }
+
+        .header-banner-main {
+            display: grid;
+            grid-area: content;
+            grid-gap: 10px;
+            padding: 16px;
+            box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+        }
+
+        .header-banner-main .date,
+        .site-description {
+            text-transform: uppercase;
+            margin: 0;
+            align-self: center;
+        }
+
+        .site-title {
+            width: 100%;
+            padding: 0 8vw;
+            margin: 0;
+            align-self: center;
+        }
+
+        .site-title .logo-text {
+            transition: fill .2s;
+        }
+
+        .header-location {
+            display: grid;
+            place-items: center;
+            grid-gap: 15px;
+            grid-area: side2;
+            padding: 2.28571429rem;
+        }
+
+        .header-location .location {
+            text-transform: uppercase;
+            margin: 0;
+            width: 120px;
+        }
+
+        .section-heading {
+            font-size: 1.2857142857142858rem;
+            line-height: 1.33333333;
+            font-weight: 700;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .section-heading,
+        .section-text {
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .nav ul.menu {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav ul.menu li {
+            padding: 15px;
+            list-style: none;
+            box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+        }
+
+        .nav ul.menu li a {
+            font-size: 1.2857142857142858rem;
+            line-height: 1.33333333;
+            font-weight: 700;
+            font-family: 'Space Mono', monospace;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+          .nav ul.menu li a .hover-indicator>svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .nav ul.menu li a .hover-indicator .circle-1 {
+            width: 13rem;
+            transform: translate(-45%, -50%);
+        }
+        .nav ul.menu li a .hover-indicator .circle-2 {
+            width: 16rem;
+            transform: translate(-44%, -52%);
+        }
+        .nav ul.menu li a .hover-indicator .circle-3 {
+            width: 14rem;
+        }
+		
+        .nav li:hover .hover-path {
+            display: block;
+        }
+
+        @keyframes goAround {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .circle-1 .hover-path,
+        .circle-3 .hover-path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation-delay: 300ms;
+            animation: goAround .6s linear 300ms backwards;
+        }
+
+        .circle-2 .hover-path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation-delay: 300ms;
+            animation: goAround .6s linear 300ms forwards;
+        }
+
+        .component {
+            display: grid;
+        }
+
+        .find-us .card-special-border {
+            grid-gap: 15px;
+        }
+
+        .phone {
+            display: grid;
+            grid-gap: 15px;
+        }
+
+        .first {
+            display: grid;
+            grid-template-columns: 8fr 4fr;
+        }
+
+        .copy {
+            font-family: 'Space Mono', monospace;
+            font-weight: 400;
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.2;
+            text-align: left;
+        }
+
+        .card {
+            box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+            padding: 1.42857143rem;
+            font-weight: 400;
+        }
+
+        .card-special-border {
+            display: grid;
+            place-items: center;
+            height: 100%;
+            border: 3px dashed;
+            padding: 1.42857143rem;
+            border-image: url("images/outline.svg") 32 round;
+        }
+
+        .second {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto;
+        }
+
+        .straight-from {
+            display: grid;
+            grid-template-columns: 4fr 1fr 1fr;
+            grid-template-rows: repeat(2, auto, );
+            padding-bottom: 50px;
+        }
+
+        .straight-from .component-header {
+            grid-column: 1/span 2;
+            grid-row: 1;
+            z-index: 1;
+        }
+
+        .straight-from .component-body {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .straight-from .footer {
+            grid-column: 2/span 2;
+            grid-row: 1/span 2;
+            align-self: center;
+        }
+
+        .straight-from .title-description {
+            margin-bottom: 8px;
+        }
+
+        .hover-path, 
+        .hidden-img,
+        .hidden-mobile {
+            display: none;
+        }
+
+        .column {
+            column-count: 2;
+        }
+
+        .third-content {
+            box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            overflow: hidden;
+        }
+
+        .third-first {
+            display: grid;
+            grid-template-rows: repeat(3, auto);
+            grid-gap: 15px;
+        }
+
+        .third-second {
+            display: grid;
+            grid-template-rows: repeat(3, auto);
+            grid-gap: 15px;
+            grid-row: span 2;
+            font-family: 'Space Mono', monospace;
+            font-weight: 400;
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.71428571;
+        }
+
+        .third-third {
+            display: grid;
+            grid-template-rows: repeat(3, auto);
+            grid-gap: 15px;
+        }
+
+        .third-fourth {
+            padding: 25px;
+            grid-column: 3/3;
+        }
+
+
+        .component-header {
+            text-align: left;
+        }
+
+        .component-body {
+            display: grid;
+            grid-gap: 20px;
+
+        }
+
+        .component-footer {
+            font-family: 'Space Mono', monospace;
+            align-self: end;
+            justify-self: end;
+        }
+
+        .footer-items {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+        }
+
+        .footer-item {
+            box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+            padding: 14px 20px;
+            font-size: 1.1428571428571428rem;
+            line-height: 1;
+            font-weight: 400;
+            font-family: 'Space Mono', monospace;
+            text-transform: uppercase;
+        }
+
+
+        canvas {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border: 3px solid red;
+			background: pink;
+        }
+
+        .no {
+            user-select: none;
+        }
+
+
+        a:hover svg {
+            fill: #26498d;
+        }
+
+        a:hover {
+            color: #26498d;
+        }
+
+        .blue:hover img,
+        .header-logo:hover .logo {
+            filter: brightness(100%) grayscale(0%) contrast(100%);
+            transition: filter .9s;
+        }
+
+
+
+        @media screen and (max-width: 1200px) {
+            .title-med {
+                font-size: 4rem;
+            }
+        }
+
+        @media screen and (max-width: 1100px) {
+
+            .title,
+            .title-med {
+                font-size: 2.857142857142857rem;
+            }
+
+            .title-sm {
+                font-size: 2.4rem;
+            }
+
+            .title-lg {
+                font-size: 4.4285714285714284rem;
+            }
+
+            .copy {
+                font-size: .85rem;
+            }
+
+            .component-footer {
+                font-size: .95rem;
+                line-height: 1.3;
+            }
+
+        }
+
+        @media screen and (max-width: 900px) {
+            .title-description {
+                font-size: .8rem;
+                line-height: 1;
+            }
+
+            .header-logo .logo {
+                transform: scale(.8);
+            }
+
+            .nav ul.menu li a {
+                font-size: .8rem;
+            }
+
+            .title-med {
+                font-size: 2.857142857142857rem;
+            }
+
+            .component-body,
+            .component-header,
+            .component-footer {
+                grid-gap: 8px;
+            }
+
+            .component-footer {
+                text-align: right;
+            }
+
+            .copy,
+            .component-footer {
+                font-size: .75rem;
+                line-height: 1.1;
+            }
+
+            .section-heading {
+                font-size: 0.9857142857142858rem;
+                line-height: 1;
+            }
+
+            .section-text {
+                line-height: 1.4;
+                margin-top: 4px;
+                font-size: 0.7rem;
+            }
+
+            .third-fourth {
+                padding: 15px;
+            }
+
+            .footer-item {
+                font-size: .7rem;
+                line-height: .9;
+            }
+
+        }
+
+
+        @media screen and (max-width:800px) {
+            .header-banner-main .date {
+                line-height: 1;
+                font-size: .6rem;
+            }
+
+            .site-description {
+                line-height: 1.1;
+                font-size: 1.1rem;
+            }
+
+            .header-logo,
+            .header-location {
+                padding: 8px;
+                grid-gap: 0;
+            }
+
+            .header-location .location {
+                font-size: 0.8857142857142858rem;
+            }
+
+            .title-lg {
+                font-size: 3.4285714285714284rem;
+            }
+
+            .title-med {
+                font-size: 2.1rem;
+            }
+
+            .title-sm {
+                font-size: 1.8rem;
+            }
+
+            .section-heading {
+                font-size: 0.6857142857142858rem;
+            }
+
+            .section-text {
+                font-size: 0.6rem;
+            }
+
+            .copy,
+            .component-footer {
+                font-size: .65rem;
+                line-height: 1;
+            }
+			.nav ul.menu li a .hover-indicator .circle-1 {
+             width: 8rem;
+          }
+
+           .nav ul.menu li a .hover-indicator .circle-2 {
+            width: 10rem;
+          }
+
+           .nav ul.menu li a .hover-indicator .circle-3 {
+            width: 8rem;
+         }
+		 }
+
+
+            @media screen and (max-width: 700px) {
+
+                .header-logo,
+                .header-location {
+                    display: none;
+                }
+
+                .header-banner-main .date {
+                    font-size: .8rem;
+                }
+
+                .header-banner {
+                    grid-template-columns: 1fr;
+                    grid-template-areas:
+                        "content"
+                }
+
+                .first,
+                .second {
+                    grid-template-columns: 1fr;
+                }
+
+                .third-first {
+                    order: 1;
+                    grid-column: 1/span 3;
+                }
+
+                .third-second {
+                    grid-column: 1/span 3;
+                    order: 2;
+                }
+
+                .third-third {
+                    order: 3;
+                    grid-column: 1/span 3;
+                }
+
+                .third-fourth {
+                    order: 4;
+                    grid-column: 1/span 3;
+                }
+
+                .find-us .card-special-border {
+                    grid-gap: 7px;
+                }
+
+                .copy,
+                .component-footer {
+                    font-size: .85rem;
+                    line-height: 1.41428571;
+                }
+
+                .get-in-touch .card-special-border {
+                    grid-gap: 20px;
+                }
+
+                .title-sm {
+                    font-size: 2.5rem;
+                }
+
+                .section-heading {
+                    font-size: 0.9857142857142858rem;
+                    line-height: 1;
+                }
+
+                .section-text {
+                    line-height: 1.4;
+                    font-size: 0.7rem;
+                }
+
+                .phone {
+                    grid-template-columns: 2fr 2fr;
+                    grid-gap: 20vw;
+                }
+				
+				.straight-from {
+					display: block;
+				}
+				.straight-from .footer{
+				display:none;
+				}
+				
+				.hidden-img {
+				display: block;
+				float: right;
+				width: 50%;
+				margin-top: -5rem;
+				}
+				
+                .title-med {
+                    font-size: 2.5rem;
+                    line-height: .85714286;
+                }
+
+                .column {
+                    column-count: auto;
+                }
+
+                .title-med {
+                    font-size: 2.5rem;
+                    line-height: .85714286;
+                }
+
+                .third-first,
+                .third-second,
+                .third-third,
+                .component-body {
+                    grid-gap: 20px;
+                }
+
+                .footer-items {
+                    grid-template-columns: 1fr;
+                }
+
+                .hidden-mobile {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    padding: 0;
+                    margin: 0;
+                    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+                }
+
+                .hidden-mobile li {
+                    padding: 15px;
+                    list-style: none;
+                    box-shadow: 0 0 0 1px #231f20, inset 0 0 0 1px #231f20;
+                    text-transform: uppercase;
+                }
+
+                .footer-item {
+                    font-size: 1rem;
+                    line-height: 1;
+                }
+            }
+
+
+            @media screen and (max-width: 420px) {
+
+                .nav ul.menu,
+                .hidden-mobile {
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 2, auto;
+                }
+
+                .long {
+                    grid-column: 1/-1;
+                }
+
+                .title-lg {
+                    font-size: 3rem;
+                    line-height: .75;
+                }
+
+            }
+
+            @media screen and (max-width: 300px) {
+
+                .nav ul.menu,
+                .hidden-mobile {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                }
+
+                .long {
+                    grid-column: 1;
+                    grid-row: 2;
+                }
+            }	
+
+
+
+
+		
+</style>
+
+
+
+<body class="show-blue">
+
+	<div class="under-wrapper">
+
+	
+	<div id="site-wrapper">
+
+
+		<header class="site-header">
+
+
+			<section class="header-banner component row">
+
+				<a class="header-logo blue" title="Home" href="">
+					<div class="logo image blue">
+						<img src="images/logo_icon.svg">
+					</div>
+				</a>
+
+				<a class="header-banner-main" href="">
+					<p class="date">
+						<span class="day"></span>
+						<span class="month"></span>
+						<span class="year"></span>
+					</p>
+
+					<h1 class="site-title">
+						<svg class="logo-text" fill="#231f20" viewBox="0 0 745 82.48">
+							<path d="M26.62,48.32C12.34,45.12,1,38.84,1,24.11,1,10.62,12.11,0,27.19,0,42.49,0,53.46,10.62,53.46,24.11v1.71a2.29,2.29,0,0,1-2.29,2.29H39.64a2.29,2.29,0,0,1-2.28-2.29V24.11c0-4.57-3.66-8.57-10.17-8.57s-9.94,3.43-9.94,8c0,4.34,4.23,7.08,10.17,8.23C43.3,35,55.06,41.58,55.06,57.46c0,14.85-11.65,25-27.87,25C11.42,82.48,0,71.4,0,57.46V54a2.29,2.29,0,0,1,2.29-2.28H13.82A2.29,2.29,0,0,1,16.11,54v3.43c0,5.26,4,9.37,11.08,9.37,6.85,0,11.31-4,11.31-9.37C38.5,52.55,35.18,50.26,26.62,48.32Z"></path>
+							<path d="M93.31,64.09a1.08,1.08,0,0,0,1.14,1.14h27.08a2.29,2.29,0,0,1,2.29,2.29V78.94a2.29,2.29,0,0,1-2.29,2.29H79.61a2.29,2.29,0,0,1-2.29-2.29V3.54a2.29,2.29,0,0,1,2.29-2.29h41.47a2.29,2.29,0,0,1,2.29,2.29V15a2.29,2.29,0,0,1-2.29,2.29H94.46a1.08,1.08,0,0,0-1.14,1.14V32.1a1.08,1.08,0,0,0,1.14,1.14h25.7a2.29,2.29,0,0,1,2.29,2.28V47a2.29,2.29,0,0,1-2.29,2.28H94.46a1.08,1.08,0,0,0-1.14,1.14Z"></path>
+							<path d="M180.69,67.74C180.46,66.83,180,66,179,66H161.61c-1,0-1.48.68-1.72,1.71l-3.2,11.77a2.2,2.2,0,0,1-2.17,1.72h-12c-1.83,0-2.52-1.26-2.29-2.29L160.7,3a2.2,2.2,0,0,1,2.17-1.71h15.31A2.2,2.2,0,0,1,180.35,3l20.33,76c.23,1-.46,2.29-2.29,2.29h-12a2.3,2.3,0,0,1-2.17-1.72Zm-4.11-19-5.48-27.42c-.11-.34-.23-.46-.57-.46h-.23c-.34,0-.46.11-.57.46l-5.48,27.42c-.23.91.23,1.26.91,1.26h10.51C176.35,50,176.81,49.69,176.57,48.78Z"></path>
+							<path d="M295.58,1.26H307a2.29,2.29,0,0,1,2.29,2.29V78.94A2.29,2.29,0,0,1,307,81.22H295.58a2.29,2.29,0,0,1-2.29-2.29V50.38a1.08,1.08,0,0,0-1.14-1.14H274.79a1.08,1.08,0,0,0-1.14,1.14V78.94c0,1.26-1.6,2.29-2.86,2.29H259.94a2.29,2.29,0,0,1-2.29-2.29V3.54a2.29,2.29,0,0,1,2.29-2.29h11.42a2.29,2.29,0,0,1,2.29,2.29V32.1a1.08,1.08,0,0,0,1.14,1.14h17.36a1.08,1.08,0,0,0,1.14-1.14V3.54A2.29,2.29,0,0,1,295.58,1.26Z"></path>
+							<path d="M369,67.74c-.23-.91-.68-1.71-1.72-1.71H349.94c-1,0-1.48.68-1.72,1.71L345,79.51a2.2,2.2,0,0,1-2.17,1.72h-12c-1.83,0-2.52-1.26-2.29-2.29L349,3a2.2,2.2,0,0,1,2.17-1.71h15.31A2.2,2.2,0,0,1,368.68,3l20.33,76c.23,1-.46,2.29-2.29,2.29h-12a2.3,2.3,0,0,1-2.17-1.72Zm-4.11-19-5.48-27.42c-.11-.34-.23-.46-.57-.46h-.23c-.34,0-.46.11-.57.46l-5.48,27.42c-.23.91.23,1.26.91,1.26H364C364.68,50,365.14,49.69,364.91,48.78Z"></path>
+							<path d="M425.44,49.24a1.08,1.08,0,0,0-1.14,1.14V78.94A2.29,2.29,0,0,1,422,81.22H410.59a2.29,2.29,0,0,1-2.29-2.29V3.54a2.29,2.29,0,0,1,2.29-2.29h25.13a24.14,24.14,0,0,1,24,24c0,8.8-3.77,14.74-11.88,20.22-1.6,1.14-1.48,2.06-.68,3.77L459.36,77.8c.8,1.71.11,3.43-2.17,3.43H445.43a3.27,3.27,0,0,1-3.31-2.29L430.46,50.72a2.18,2.18,0,0,0-2.06-1.48Zm0-32a1.08,1.08,0,0,0-1.14,1.14V32.1a1.08,1.08,0,0,0,1.14,1.14h10.28a8,8,0,1,0,0-16Z"></path>
+							<path d="M518.29,79.51a2.17,2.17,0,0,1-2.17,1.72H498.87a2.17,2.17,0,0,1-2.17-1.72L476.94,4a2.14,2.14,0,0,1,2.17-2.74h12.57A2,2,0,0,1,493.84,3l12.57,53.58c.11.46.34.8.8.8h.68c.46,0,.68-.34.8-.8L521.15,3a2,2,0,0,1,2.17-1.71h12.56A2.13,2.13,0,0,1,538.05,4Z"></path>
+							<path d="M573.56,64.09a1.08,1.08,0,0,0,1.14,1.14h27.08a2.29,2.29,0,0,1,2.29,2.29V78.94a2.29,2.29,0,0,1-2.29,2.29H559.86a2.29,2.29,0,0,1-2.29-2.29V3.54a2.29,2.29,0,0,1,2.29-2.29h41.47a2.29,2.29,0,0,1,2.29,2.29V15a2.29,2.29,0,0,1-2.29,2.29H574.7a1.08,1.08,0,0,0-1.14,1.14V32.1a1.08,1.08,0,0,0,1.14,1.14h25.7a2.29,2.29,0,0,1,2.29,2.28V47a2.29,2.29,0,0,1-2.29,2.28H574.7a1.08,1.08,0,0,0-1.14,1.14Z"></path>
+							<path d="M650.09,48.32c-14.28-3.2-25.59-9.48-25.59-24.22C624.5,10.62,635.58,0,650.66,0,666,0,676.93,10.62,676.93,24.11v1.71a2.29,2.29,0,0,1-2.29,2.29H663.11a2.29,2.29,0,0,1-2.28-2.29V24.11c0-4.57-3.66-8.57-10.17-8.57s-9.94,3.43-9.94,8c0,4.34,4.23,7.08,10.17,8.23,15.88,3.2,27.65,9.82,27.65,25.7,0,14.85-11.65,25-27.87,25-15.77,0-27.19-11.08-27.19-25V54a2.29,2.29,0,0,1,2.29-2.28h11.54A2.29,2.29,0,0,1,639.58,54v3.43c0,5.26,4,9.37,11.08,9.37,6.85,0,11.31-4,11.31-9.37C662,52.55,658.65,50.26,650.09,48.32Z"></path>
+							<path d="M727.29,18.39V78.94A2.29,2.29,0,0,1,725,81.22H713.58a2.29,2.29,0,0,1-2.28-2.29V18.39a1.08,1.08,0,0,0-1.14-1.14H695.88A2.29,2.29,0,0,1,693.59,15V3.54a2.29,2.29,0,0,1,2.29-2.29h46.84A2.29,2.29,0,0,1,745,3.54V15a2.29,2.29,0,0,1-2.29,2.29H728.44A1.08,1.08,0,0,0,727.29,18.39Z"></path>
+						</svg>
+					</h1>
+					<h2 class="site-description">FRESH SEAFOOD MARKET</h2>
+				</a>
+
+
+				<div class="header-location">
+					<a href="" class="location section-heading">Belconnen Markets</a>
+					<a href="" class="location section-heading">Fyshwick Markets</a>
+				</div>
+
+
+
+			</section>
+
+
+
+				<nav class="nav">
+			
+					<ul class="menu">
+
+						<li>
+							<a href="">
+								About<span class="hover-indicator">
+									<svg viewBox="-2 -4 150.93 80.58" class="circle-1">
+										<path class="hover-path" fill="none" stroke="#26498d" stroke-miterlimit="10" stroke-width="15px" d="M51.36,8.75q-9.14-.64-18.3-.85-4.92-.16-9.85,0c-3.22.23-6.62.7-9.39,2.49A21.08,21.08,0,0,0,8,16.62,17.68,17.68,0,0,0,5.8,21.85c-.68,2.42-1.13,4.43-.48,6.94,1,3.79,3.48,7,6,9.91a60.49,60.49,0,0,0,15,12.44C33.6,55.43,41.8,57.88,49.91,60a144.68,144.68,0,0,0,27.72,4.25c10.65.62,21.78.65,32.27-1.6a48.14,48.14,0,0,0,10.86-3.49,16.81,16.81,0,0,0,6-4.33,11,11,0,0,0,1.91-9.37c-1.11-5.29-4.53-9.43-8.55-12.91a71.43,71.43,0,0,0-17.8-10.19Q89.91,17.05,77.08,13C66.09,9.53,54.58,6,43,5.14a32.64,32.64,0,0,0-8.67.34"></path>
+									</svg>
+								</span></a></li>
+
+						<li>
+							<a href="">
+								Products<span class="hover-indicator">
+									<svg viewBox="0 0 414.84 111.47" class="circle-2">
+										<path fill="none" stroke="#26498d" stroke-miterlimit="10" stroke-width="25px" class="hover-path" d="M180.35,13.55c34.13-1.2,68.69-2.81,102.4,4.3,16.68,3.52,34,8,42.07,24.47,6.87,14.12.21,30.15-13.29,37-14.74,7.47-31.66,8.88-47.81,10.7-37.22,4.19-74.64,6.71-112.06,8.23-26.8,1.09-53.5,1-80.27-.54q-13.88-.54-27.64-2.36a52.37,52.37,0,0,1-16.92-3.74,26.59,26.59,0,0,1-13.5-18.42c-1.42-6.8-1.45-11.7,3.62-16.94,10.74-11.1,28.44-15.61,42.88-20.07a334.43,334.43,0,0,1,58.34-10q39.16-5.09,78.66-6.47c49.34-2.31,98.76-1.35,148.06,1.27,19.22,1,38.35,2.18,57.45,4.55"></path>
+									</svg>
+								</span></a></li>
+
+						<li>
+							<a href="">
+								Contact<span class="hover-indicator">
+									<svg viewBox="0 0 394.1 152.8" class="circle-3">
+										<path fill="none" stroke="#26498d" stroke-miterlimit="10" stroke-width="30px" class="hover-path" d="M104.1,58.5c-25.8,0.1-54.1,3.7-75,20.2c-6.4,5-11.8,11-13.7,19.1c-2.3,9.3,5.9,20.1,13,24.8
+											c14.3,9.3,31.5,10.9,48,12.5c36.1,3.7,72.4,3,108.6,1.3c25-1.1,49.9-3.6,74.7-7.4c21.3-2.2,42.4-6.3,63-12.2
+											c9.3-3.2,18.6-6.4,27.9-9.6c11-2.4,19.7-8,26.2-16.8c-4.6-10.3-12.3-17.4-23.1-21.2c-17.4-11.4-36.1-20.4-55.9-27
+											c-33.5-12.8-71.9-23.1-108-25.8c-17.8-1.3-37.2-2.9-54.7,1.4c-5.4,1.3-11.6,2.5-14.6,7.7"></path>
+									</svg>
+								</span></a></li>
+
+						<li class="long">
+							<a href="">
+								Order<span class="hover-indicator">
+									<svg viewBox="-2 -4 150.93 80.58" class="circle-1">
+										<path class="hover-path" fill="none" stroke="#26498d" stroke-miterlimit="10" stroke-width="15px" d="M51.36,8.75q-9.14-.64-18.3-.85-4.92-.16-9.85,0c-3.22.23-6.62.7-9.39,2.49A21.08,21.08,0,0,0,8,16.62,17.68,17.68,0,0,0,5.8,21.85c-.68,2.42-1.13,4.43-.48,6.94,1,3.79,3.48,7,6,9.91a60.49,60.49,0,0,0,15,12.44C33.6,55.43,41.8,57.88,49.91,60a144.68,144.68,0,0,0,27.72,4.25c10.65.62,21.78.65,32.27-1.6a48.14,48.14,0,0,0,10.86-3.49,16.81,16.81,0,0,0,6-4.33,11,11,0,0,0,1.91-9.37c-1.11-5.29-4.53-9.43-8.55-12.91a71.43,71.43,0,0,0-17.8-10.19Q89.91,17.05,77.08,13C66.09,9.53,54.58,6,43,5.14a32.64,32.64,0,0,0-8.67.34"></path>
+									</svg>
+								</span></a></li>
+
+					</ul>
+				</nav>
+		</header>
+
+
+	
+			
+
+
+ <!-- ********************************************-----FIRST SECTION --------******************************************************************* -->
+ 	<div class="content">
+			<div class="first component">
+			
+		<!-- /////////pirmas -->
+				<a href="" class="card article-preview component blue">
+					<div class="component-header">
+						
+						<h3 class="title-lg title">
+							Catch of the day </h3>
+						<p class="title-description">
+							From sea to plate </p>
+					</div>
+
+					<div class="component-body">
+						<img class="image" src="images/salmon-blue3.png">
+						<p class="copy">
+							The latest harvest has yielded deliciously fresh seafood perfect for devouring on its own or as part of a
+							scrumptious recipe. Here’s a seasonal favourite... </p>
+					</div>
+
+					<div class="component-footer">					
+					Read more on page 3						
+					</div>
+
+				</a>
+				
+		<!-- ///antras -->
+				<a href="" class="component blue card find-us">
+					<div class="card-special-border ">
+						<h3 class="title-sm title">
+							FIND US
+						</h3>
+						<img class="image" 						
+						src="https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/compass-blue.png"						
+						 srcset="https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/compass-blue-sml.png 526w,
+					https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/compass-blue-med.png 842w"
+						 sizes="(max-width: 700px) 90vw,
+													400px">
+													
+													
+							<div class="component component-address">
+		
+								<h4 class="section-heading">
+									Belconnen Markets </h4>
+								<p class="section-text">
+									10 Lathlain St, Belconnen ACT 2617, Australia </p>
+								<p class="section-text">Open Wed-Sun 8:00am-6:00pm</p>
+								</div>
+								<div class="component component-address">
+								
+								<h4 class="section-heading">
+									Fyshwick Markets </h4>
+								<p class="section-text">
+									12 Dalby St, Fyshwick ACT 2609, Australia </p>
+								<p class="section-text">Open Thu-Sun 7:00am-5:30pm</p>
+							
+							</div>
+						
+					</div>
+				</a>
+			</div>
+
+			 <!-- ********************************************-----second SECTION --------******************************************************************* -->
+			
+			<div class="second component">
+			
+
+				<div class="component card get-in-touch blue">
+					<div class="card-special-border">
+						<img class="image" src="https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/phone-blue.png"
+						 srcset="https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/phone-blue-sml.png 675w,
+			https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/phone-blue-med.png 1040w"
+						 sizes="(max-width: 700px) 90vw,
+											400px">
+					
+						<h3 class="title-sm title">Get In <br>Touch</h3>
+
+						<div class="phone component-address">
+							
+								<a href="">
+									<h4 class="section-heading">
+										Call Us
+									</h4>
+									<p class="section-text">
+										0436 455 551 </p>
+								</a>
+						
+								<a href="">
+									<h4 class="section-heading">
+										Email Us
+									</h4>
+									<p class="section-text">
+										CLICK HERE
+									</p>
+								</a>
+						
+						</div>
+					</div>
+				</div>
+    <!-- /////////// antras  straight -->
+	
+				<div class=" component straight-from card blue" >
+							<div class="component-header">
+								<h3 class="title-med title">
+									Straight From the Source </h3>
+								<p class="title-description">
+									Sea Harvest Fresh </p>
+							</div>
+
+							<div class="component-body">
+								<p class="column copy">
+								
+									<img class="image hidden-img"
+									src="https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/fish-tall-blue.png" 
+									srcset="https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/fish-tall-blue-sml.png 480w,
+									https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/fish-tall-blue-med.png 768w" sizes="(max-width: 700px) 50vw,
+									400px">
+									The blue green waters off the south east coast of Australia glisten as the sun rises above the horizon. Up
+									early and eager, local fishermen brave the choppy seas as they collect their daily yield. Dedicated to
+									preservation, they work extra hard to follow environmentally sustainable fishing practices – including
+									avoiding overfishing, staying clear of protected areas, releasing protected species, and using safe fishing
+									gear. As they arrive back at the docks, the huge array of fresh seafood is put on ice and shipped directly to
+									Sea Harvest’s door in Canberra. Oysters, prawns, mussels, calamari, lobster, snapper, and every seasonal fish
+									available travels straight from sea to store, just for you. </p>
+							</div>
+							
+				
+
+					
+					<div class="footer">
+						<img class="image" src="https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/fish-tall-blue.png"
+						 srcset="https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/fish-tall-blue-sml.png 480w,
+		https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/fish-tall-blue-med.png 768w"
+						 sizes="(max-width: 700px) 50vw,
+										400px">
+					</div>
+					
+					
+					
+				</div>
+			</div>
+
+			
+			 <!-- ********************************************-----third SECTION --------******************************************************************* -->
+			 
+			 
+			<div class="third-content component">
+			
+			<!-- ///////////FIRST -->
+				<a href="" class="third-first card component blue">
+					<div class="component-header">
+						
+						<h3 class="title-med title">
+							THE SEA HARVEST STORY </h3>
+						<p class="title-description">A tale of fish and family</p>
+					</div>
+
+					<div class="component-body">
+						<img class="image" src="https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/logo/logo_bold.svg">
+						<p class="copy"> The Sea Harvest story begins in the 1800s on a small, picturesque fishing island
+							called Lefkada in Greece. For generations since, our love of the sea and taste for seafood has endured,
+							following us to Canberra where we settled in the 1970s. For over 40 years now, we have dedicated ourselves to
+							offering the finest and freshest Australian seafood at the best prices. </p>
+					</div>
+
+					<div class="component-footer">
+						
+							Read more on page 9
+						
+					</div>
+				</a>
+      <!-- //////*****second****** -->
+				<a href="" class="third-second card component blue">
+				 
+					<div class="component-header">
+						
+						<h3 class="title-med title">
+							Batemans Bay Fishing Tips </h3>
+						<p class="title-description">Score the Best Catch</p>
+					</div>
+					<div class="component-body">
+						<img class="image" src="https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/fisherman-blue-med.png">
+						<p class="copy"> Cars will soon be bumper-to-bumper on the Clyde and Brown mountains as Canberrans
+							pour out of the capital to feel the sun on their backs and... </p>
+					</div>
+					<div class="component-footer">					
+							Read more on page 12						
+					</div>
+				</a>
+   <!-- //////////// TRECIAS  -->
+				<div class="third-third blue card component">
+					<div class="component-header">
+			
+						<h3 class="title-med title">
+							Fresh As It Gets </h3>
+						<div class="title-description">
+							A taste of the sea </div>
+					</div>
+
+					<div class="component-body">
+						<img class="image" src="https://www.seaharvest.net.au/wp-content/themes/seaharvest/img/assets/built/crab-blue-med.png">
+						<p class="copy">Sea Harvest’s seafood is trusted by many of the best seafood restaurants in Canberra.
+							We are obsessed with cleanliness and quality, and only buy from suppliers who are 100% committed to sustainable
+							fishing practices and the long term protection of sea life. We buy fresh so that we can sell fresh, and pride
+							ourselves on bringing the best of the coast to the capital.</p>
+					</div>
+				</div>
+				<a href="" class="third-fourth">
+					<svg class="logo-text" fill="#231f20" viewBox="0 0 745 82.48">
+						<title>
+							Home
+						</title>
+						<path d="M26.62,48.32C12.34,45.12,1,38.84,1,24.11,1,10.62,12.11,0,27.19,0,42.49,0,53.46,10.62,53.46,24.11v1.71a2.29,2.29,0,0,1-2.29,2.29H39.64a2.29,2.29,0,0,1-2.28-2.29V24.11c0-4.57-3.66-8.57-10.17-8.57s-9.94,3.43-9.94,8c0,4.34,4.23,7.08,10.17,8.23C43.3,35,55.06,41.58,55.06,57.46c0,14.85-11.65,25-27.87,25C11.42,82.48,0,71.4,0,57.46V54a2.29,2.29,0,0,1,2.29-2.28H13.82A2.29,2.29,0,0,1,16.11,54v3.43c0,5.26,4,9.37,11.08,9.37,6.85,0,11.31-4,11.31-9.37C38.5,52.55,35.18,50.26,26.62,48.32Z"></path>
+						<path d="M93.31,64.09a1.08,1.08,0,0,0,1.14,1.14h27.08a2.29,2.29,0,0,1,2.29,2.29V78.94a2.29,2.29,0,0,1-2.29,2.29H79.61a2.29,2.29,0,0,1-2.29-2.29V3.54a2.29,2.29,0,0,1,2.29-2.29h41.47a2.29,2.29,0,0,1,2.29,2.29V15a2.29,2.29,0,0,1-2.29,2.29H94.46a1.08,1.08,0,0,0-1.14,1.14V32.1a1.08,1.08,0,0,0,1.14,1.14h25.7a2.29,2.29,0,0,1,2.29,2.28V47a2.29,2.29,0,0,1-2.29,2.28H94.46a1.08,1.08,0,0,0-1.14,1.14Z"></path>
+						<path d="M180.69,67.74C180.46,66.83,180,66,179,66H161.61c-1,0-1.48.68-1.72,1.71l-3.2,11.77a2.2,2.2,0,0,1-2.17,1.72h-12c-1.83,0-2.52-1.26-2.29-2.29L160.7,3a2.2,2.2,0,0,1,2.17-1.71h15.31A2.2,2.2,0,0,1,180.35,3l20.33,76c.23,1-.46,2.29-2.29,2.29h-12a2.3,2.3,0,0,1-2.17-1.72Zm-4.11-19-5.48-27.42c-.11-.34-.23-.46-.57-.46h-.23c-.34,0-.46.11-.57.46l-5.48,27.42c-.23.91.23,1.26.91,1.26h10.51C176.35,50,176.81,49.69,176.57,48.78Z"></path>
+						<path d="M295.58,1.26H307a2.29,2.29,0,0,1,2.29,2.29V78.94A2.29,2.29,0,0,1,307,81.22H295.58a2.29,2.29,0,0,1-2.29-2.29V50.38a1.08,1.08,0,0,0-1.14-1.14H274.79a1.08,1.08,0,0,0-1.14,1.14V78.94c0,1.26-1.6,2.29-2.86,2.29H259.94a2.29,2.29,0,0,1-2.29-2.29V3.54a2.29,2.29,0,0,1,2.29-2.29h11.42a2.29,2.29,0,0,1,2.29,2.29V32.1a1.08,1.08,0,0,0,1.14,1.14h17.36a1.08,1.08,0,0,0,1.14-1.14V3.54A2.29,2.29,0,0,1,295.58,1.26Z"></path>
+						<path d="M369,67.74c-.23-.91-.68-1.71-1.72-1.71H349.94c-1,0-1.48.68-1.72,1.71L345,79.51a2.2,2.2,0,0,1-2.17,1.72h-12c-1.83,0-2.52-1.26-2.29-2.29L349,3a2.2,2.2,0,0,1,2.17-1.71h15.31A2.2,2.2,0,0,1,368.68,3l20.33,76c.23,1-.46,2.29-2.29,2.29h-12a2.3,2.3,0,0,1-2.17-1.72Zm-4.11-19-5.48-27.42c-.11-.34-.23-.46-.57-.46h-.23c-.34,0-.46.11-.57.46l-5.48,27.42c-.23.91.23,1.26.91,1.26H364C364.68,50,365.14,49.69,364.91,48.78Z"></path>
+						<path d="M425.44,49.24a1.08,1.08,0,0,0-1.14,1.14V78.94A2.29,2.29,0,0,1,422,81.22H410.59a2.29,2.29,0,0,1-2.29-2.29V3.54a2.29,2.29,0,0,1,2.29-2.29h25.13a24.14,24.14,0,0,1,24,24c0,8.8-3.77,14.74-11.88,20.22-1.6,1.14-1.48,2.06-.68,3.77L459.36,77.8c.8,1.71.11,3.43-2.17,3.43H445.43a3.27,3.27,0,0,1-3.31-2.29L430.46,50.72a2.18,2.18,0,0,0-2.06-1.48Zm0-32a1.08,1.08,0,0,0-1.14,1.14V32.1a1.08,1.08,0,0,0,1.14,1.14h10.28a8,8,0,1,0,0-16Z"></path>
+						<path d="M518.29,79.51a2.17,2.17,0,0,1-2.17,1.72H498.87a2.17,2.17,0,0,1-2.17-1.72L476.94,4a2.14,2.14,0,0,1,2.17-2.74h12.57A2,2,0,0,1,493.84,3l12.57,53.58c.11.46.34.8.8.8h.68c.46,0,.68-.34.8-.8L521.15,3a2,2,0,0,1,2.17-1.71h12.56A2.13,2.13,0,0,1,538.05,4Z"></path>
+						<path d="M573.56,64.09a1.08,1.08,0,0,0,1.14,1.14h27.08a2.29,2.29,0,0,1,2.29,2.29V78.94a2.29,2.29,0,0,1-2.29,2.29H559.86a2.29,2.29,0,0,1-2.29-2.29V3.54a2.29,2.29,0,0,1,2.29-2.29h41.47a2.29,2.29,0,0,1,2.29,2.29V15a2.29,2.29,0,0,1-2.29,2.29H574.7a1.08,1.08,0,0,0-1.14,1.14V32.1a1.08,1.08,0,0,0,1.14,1.14h25.7a2.29,2.29,0,0,1,2.29,2.28V47a2.29,2.29,0,0,1-2.29,2.28H574.7a1.08,1.08,0,0,0-1.14,1.14Z"></path>
+						<path d="M650.09,48.32c-14.28-3.2-25.59-9.48-25.59-24.22C624.5,10.62,635.58,0,650.66,0,666,0,676.93,10.62,676.93,24.11v1.71a2.29,2.29,0,0,1-2.29,2.29H663.11a2.29,2.29,0,0,1-2.28-2.29V24.11c0-4.57-3.66-8.57-10.17-8.57s-9.94,3.43-9.94,8c0,4.34,4.23,7.08,10.17,8.23,15.88,3.2,27.65,9.82,27.65,25.7,0,14.85-11.65,25-27.87,25-15.77,0-27.19-11.08-27.19-25V54a2.29,2.29,0,0,1,2.29-2.28h11.54A2.29,2.29,0,0,1,639.58,54v3.43c0,5.26,4,9.37,11.08,9.37,6.85,0,11.31-4,11.31-9.37C662,52.55,658.65,50.26,650.09,48.32Z"></path>
+						<path d="M727.29,18.39V78.94A2.29,2.29,0,0,1,725,81.22H713.58a2.29,2.29,0,0,1-2.28-2.29V18.39a1.08,1.08,0,0,0-1.14-1.14H695.88A2.29,2.29,0,0,1,693.59,15V3.54a2.29,2.29,0,0,1,2.29-2.29h46.84A2.29,2.29,0,0,1,745,3.54V15a2.29,2.29,0,0,1-2.29,2.29H728.44A1.08,1.08,0,0,0,727.29,18.39Z"></path>
+					</svg>
+				</a>
+
+			</div>
+		</div>
+
+
+		<footer id="site-footer">
+		
+				<ul class="hidden-mobile">
+					<li><a href="">About</a></li>
+					<li><a href="">Products</a></li>
+					<li><a href="">Contact</a></li>
+					<li class="long"><a href="">Order</a></li>
+			    </ul>
+			
+			<div class="footer-items component">
+				<div class="footer-item">
+					©2018 SEA HARVEST AUSTRALIA, FRESH SEAFOOD MARKET
+				</div>
+				<a href="" class="footer-item">
+					Belconnen Markets / Fyshwick Markets </a>
+				<a href="https://www.ed.com.au" class="footer-item">
+					WEBSITE BY ED.
+				</a>
+			</div>
+			
+		</footer>
+
+		
+			<!-- <canvas width="1022" height="2046" class="base-draw" style="pointer-events: none;  top: 0px; left: 0px;"></canvas> -->
+	</div>
+	
+	</div>
+
+
+	<script>
+		////***** setting real time date on the top of the page
+		let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		let weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturay'];
+		let now = new Date();
+		let thisMonth = months[now.getMonth()];
+		let weekDay = weekDays[now.getDay()];
+
+		document.querySelector(".day").innerHTML = weekDay + ",";
+		document.querySelector(".month").innerHTML = thisMonth + " " + now.getDate() + ",";
+		document.querySelector(".year").innerHTML = now.getFullYear();
+		
+
+
+
+
+
+		
+	</script>
+</body>
+
+</html>
