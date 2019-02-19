@@ -6,7 +6,7 @@ Clone of first page of seaharvest website - https://www.seaharvest.net.au.
 
 ## Technologies
 Vanilla JavaScript,
-HTML, 
+HTML5, 
 CSS GRID
 
 ## Setup
