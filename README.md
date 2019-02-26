@@ -11,7 +11,7 @@ My version:
 ## Technologies
 Vanilla JavaScript,
 HTML, 
-CSS GRID
+CSS GRID.
 
 ## Setup
 To run this project, open HTML file in a browser.
